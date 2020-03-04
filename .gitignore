@@ -1,7 +1,13 @@
 .idea/
-.vscode/
 node_modules/
 build/
 tmp/
 temp/
 .env
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+npm-debug.log
