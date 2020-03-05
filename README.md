@@ -1,1 +1,1 @@
-# Node TypeORM API
+# Node TypeScript REST API
