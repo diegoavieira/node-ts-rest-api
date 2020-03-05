@@ -11,7 +11,6 @@ const logger = new LoggerService();
 const app = express();
 
 app.use(morgan('dev'));
-
 app.use(cors());
 app.use(helmet());
 app.use(bodyParser.urlencoded({ extended: false }));
