@@ -1,6 +1,6 @@
 import { format, createLogger, transports } from 'winston';
 
-const dateNowFormat = new Date(Date.now()).toUTCString();
+const dateNow = new Date(Date.now()).toUTCString();
 
 const logger = createLogger({
   transports: [
@@ -14,7 +14,7 @@ const logger = createLogger({
       filename: `./logs/error.log`,
       maxsize: 5242880,
       format: format.printf(info => {
-        return `${dateNowFormat} | ${info.message}`;
+        return `${dateNow} | ${info.message}`;
       })
     })
   ]
